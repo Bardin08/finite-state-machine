@@ -16,3 +16,8 @@ jobs:
       run: dotnet build ./FSM --no-restore
     - name: Test
       run: dotnet test ./FSM --no-build --verbosity normal
+    - name: Bump versions
+      uses: michmich112/version-bumper@master
+      with:
+        options-file: '.github/versions-bumper/options.json'
+        github-token: ${{ secrets.GITHUB_TOKEN }}
