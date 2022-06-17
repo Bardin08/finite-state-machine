@@ -4,7 +4,8 @@
   "email": "vbardin810@gmail.com",
   "schemeDefinition": "major.minor[.build]",
   "versionFile": "./FSM/FSM.Core/FSM.Core.csproj",
-  "files": [ "./FSM/FSM.Core/FSM.Core.csproj", "./FSM/FSM.Core.Tests/FSM.Core.Tests.csproj"],
+  "files": [ {"path": "./FSM/FSM.Core/FSM.Core.csproj", "line": 7 },
+             {"path": "./FSM/FSM.Core/FSM.Core.csproj", "line": 8 } ],
   "rules": [
     {
       "trigger": "commit",
