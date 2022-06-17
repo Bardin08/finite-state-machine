@@ -3,7 +3,7 @@
   "username": "Bardin08",
   "email": "vbardin810@gmail.com",
   "schemeDefinition": "major.minor[.build]",
-  "versionFile": "./package.json",
+  "versionFile": "./FSM/FSM.Core/FSM.Core.csproj",
   "files": [ "./FSM/FSM.Core/FSM.Core.csproj", "./FSM/FSM.Core.Tests/FSM.Core.Tests.csproj"],
   "rules": [
     {
