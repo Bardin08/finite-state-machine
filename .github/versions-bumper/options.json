@@ -1,0 +1,29 @@
+{
+  "scheme": "semantic",
+  "username": "Bardin08",
+  "email": "vbardin810@gmail.com",
+  "schemeDefinition": "major.minor[.build]",
+  "versionFile": "./package.json",
+  "files": [ "./FSM/FSM.Core/FSM.Core.csproj", "./FSM/FSM.Core.Tests/FSM.Core.Tests.csproj"],
+  "rules": [
+    {
+      "trigger": "commit",
+      "bump": "build"
+    },
+    {
+      "trigger": "commit",
+      "bump": "minor",
+      "branch": "develop",
+      "reset": "build"
+    },
+    {
+      "trigger": "commit",
+      "bump": "major",
+      "branch": "master",
+      "reset": [
+        "minor",
+        "build"
+      ]
+    }
+  ]
+}
