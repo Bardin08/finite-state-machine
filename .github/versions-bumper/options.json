@@ -17,9 +17,23 @@
       "reset": "build"
     },
     {
+      "trigger":"commit",
+      "branch": "test",
+      "suffix": "-beta",
+      "bump":"build"
+    },
+    {
+      "trigger": "pull-request",
+      "destBranch": "main",
+      "suffix": "-rc",
+      "bump": "minor",
+      "tag": true
+    },
+    {
       "trigger": "commit",
       "bump": "major",
-      "branch": "master",
+      "branch": "release",
+      "tag": true,
       "reset": [
         "minor",
         "build"
